@@ -1,0 +1,422 @@
+/*GENERAL INFO*/
+
+header {
+    width: 100vw;
+    background-color: white;
+    background: url(/images/croatia.png) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32em;
+}
+
+
+/*HEADER*/
+
+header h1 {
+    background-color: rgb(0, 214, 108);
+    color: white;
+    border-radius: 0.4em;
+    width: 7em;
+    padding: 0.8em;
+    margin: 2.4em;
+}
+
+
+
+body{
+    margin:0;
+}
+
+body>footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 214, 108);
+    color: white;
+    text-align: center;
+    padding: 2em;
+    font-family: Nexa Bold;
+}
+
+
+@font-face {
+    font-family: "Nexa XBold";
+    src: url(../fonts/Nexa-XBold.otf);
+}
+
+@font-face {
+    font-family: "Nexa Regular";
+    src: url(../fonts/NexaRegular.otf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nexa XBold";
+}
+
+h1 {
+    font-size: 3.375em;
+    color: rgb(0, 214, 108);
+}
+
+h2 {
+    font-size: 3.375em;
+    color: rgb(40, 0, 160);
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.5em;
+    margin: .5em 0;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+    font-family: "Nexa Regular";
+}
+
+
+
+/*NAVIGATION MENU*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center
+}
+
+nav li a {
+    display: block;
+    font-family: "Nexa XBold";
+    color: rgb(0, 214, 108);
+    padding: 0.7em 1em;
+    text-decoration: none;
+    font-size: 1.4em;
+
+}
+
+nav li a:hover {
+    color: rgb(40, 0, 160);
+    transition: 0.25s;
+
+}
+
+nav li img {
+    width: 1.4em;
+    display: inline-block;
+    padding-right: 0.5em;
+    padding-left: 1em;
+    vertical-align: middle;
+}
+
+header h1 {
+    margin-left: 1em;
+}
+
+
+/*POPULAIRE VERHALEN*/
+
+section:nth-of-type(1) {
+    background-color: rgb(243, 229, 216);
+    padding: 5em;
+}
+
+section:nth-of-type(1) article {
+    background-color: white;
+    margin: 2em 2em 5em 0em;
+    width: 20em;
+    height: 30em;
+    border-radius: .75em;
+    position: relative;
+}
+
+.container {
+    display: flex;
+/*    flex-wrap:wrap;*/
+    flex-direction: row;
+    justify-content:left;
+    overflow-x:scroll;
+    flex-shrink:0;
+
+}
+
+section:nth-of-type(1) article h3 {
+    color: rgb(0, 214, 108);
+}
+
+section>footer a{
+    color: white;
+    background-color: rgb(255, 50, 104);
+    box-shadow: 0px 4px rgb(202, 43, 85);
+    Border-radius: 2em;
+    Font-size: 1em;
+    Font-weight: bold;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-family: Nexa Bold;
+}
+
+footer a:hover{
+    background-color: rgb(0, 214, 108);
+    box-shadow: 0px 4px rgb(30, 145, 98);
+    transition: 0.25s;
+
+}
+article a {
+    background-color: rgb(40, 0, 160);
+    box-shadow: 0px 4px rgb(18, 1, 69);
+    color: white;
+    text-decoration: none;
+    Font-size: 1em;
+    Font-weight: bold;
+    Font-family: Nexa Bold;
+    Border-radius: 0.5em;
+    padding: 1em;
+    margin: 0.4em;
+}
+
+article footer a:nth-of-type(1){
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+
+}
+
+article footer a:nth-of-type(2){
+    position: absolute;
+    bottom: 1em;
+    right: 2em;
+}
+
+article a:hover{
+    background-color: rgb(255, 50, 104);
+    box-shadow: 0px 4px rgb(202, 43, 85);
+    transition: 0.25s;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center
+}
+
+section:nth-of-type(1) ul li{
+    width: 10%;
+    background: url(/images/star.svg) no-repeat;
+
+}
+
+.verhalen{
+    padding: 1em;
+}
+
+article img {
+    width: 20em;
+    max-height: 14em;
+    border-top-left-radius: 0.75em;
+    border-top-right-radius: 0.75em;
+}
+
+
+
+/*FORM - BUNDEL SAMENSTELLEN*/
+
+section:nth-last-of-type(2){
+    padding: 5em;
+}
+
+section:nth-last-of-type(2) form {
+    height: 15em;
+    margin-top: 2em;
+    padding: 2em;
+    box-sizing: border-box;
+    background-color: rgb(0, 214, 108);
+    display: flex;
+    border-radius: 0.75em;
+}
+
+Form >.items {
+    color: white;
+    width: 9em;
+    line-height: 2em;
+}
+
+legend {
+    font-size: 1.3em;
+    color: rgb(40, 0, 160);
+}
+
+label{
+    display: block;
+}
+
+/*
+button{
+    margin-top: 1em;
+    width: 13em;
+    color: white;
+    background-color: rgb(255, 50, 104);
+    box-shadow: 0px 4px rgb(202, 43, 85);
+    border: none;
+    Border-radius: 2em;
+    Font-size: 1em;
+    Font-weight: bold;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-family: Nexa Bold;
+}
+*/
+
+button:hover{
+    background-color: rgb(0, 214, 108);
+    box-shadow: 0px 4px rgb(30, 145, 98);
+    transition: 0.25s;
+}
+
+fieldset {
+    border: 0;
+    font-family: Nexa Bold;
+}
+
+
+
+
+/*VOORGESTELDE BUNDELS*/
+
+section:nth-of-type(3) {
+    background-color: rgb(243, 229, 216);
+    padding: 5em;
+}
+
+section:nth-of-type(3) article {
+    background-color: white;
+/*    padding: 2em;*/
+    margin: 2em 2em 5em 0em;
+    width: 20em;
+    height: 30em;
+    border-radius: .75em;
+    position: relative;
+}
+
+.bundels{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+
+article h3 {
+    color: rgb(0, 214, 108);
+}
+
+
+footer img {
+    width: 40%;
+    padding-bottom: 2em;
+}
+
+
+
+/*INLOGGEN*/
+
+body#account{
+    background-color: rgb(0, 214, 108);
+}
+
+body#account header {
+    width: 100vw;
+    background-color: white;
+    background: url(/images/transaviacabine.jpg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 23em;
+}
+
+body#account form{
+    background-color: white;
+    width: 25em;
+    height: 30em;
+    margin: auto;
+    margin-top: 4em;
+    border-radius: 0.7em;
+}
+
+body#account input{
+    display: block;
+    margin: auto;
+    padding: 0.5em;
+    width: 20em;
+    font-size: 1em;
+}
+
+body#account label{
+    display: block;
+    font-family: Nexa Bold;
+    text-align: center;
+    padding: 0.5em;
+
+}
+
+body#account form>h1{
+    display: block;
+    font-size: 2em;
+    color: rgb(40, 0, 160);
+    text-align: center;
+    padding-top: 2.5em;
+}
+
+
+body#account p{
+    text-align: center;
+}
+body#account p>a{
+    color: rgb(255, 50, 104);
+}
+
+body#account a:hover{
+    color: rgb(40, 0, 160);
+    transition: 0.25
+}
+
+body#account form>button{
+    color: white;
+    background-color: rgb(255, 50, 104);
+    box-shadow: 0px 4px rgb(202, 43, 85);
+    border: none;
+    margin-top: 1em;
+    width: 13em;
+    Border-radius: 2em;
+    Font-size: 1em;
+    Font-weight: bold;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-family: Nexa Bold;
+    margin-left: 6em;
+}
