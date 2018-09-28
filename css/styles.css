@@ -3,7 +3,7 @@
 header {
     width: 100vw;
     background-color: white;
-    background: url(/images/croatia.png) no-repeat;
+    background: url(../images/croatia.png) no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -344,7 +344,7 @@ body#account {
 body#account header {
     width: 100vw;
     background-color: white;
-    background: url(/images/transaviacabine.jpg) no-repeat;
+    background: url(../images/transaviacabine.jpg) no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
