@@ -10,7 +10,6 @@ header {
     height: 32em;
 }
 
-
 /*HEADER*/
 
 header h1 {
@@ -22,13 +21,11 @@ header h1 {
     margin: 2.4em;
 }
 
-
-
-body{
-    margin:0;
+body {
+    margin: 0;
 }
 
-body>footer{
+body > footer {
     position: relative;
     left: 0;
     bottom: 0;
@@ -39,7 +36,6 @@ body>footer{
     padding: 2em;
     font-family: Nexa Bold;
 }
-
 
 @font-face {
     font-family: "Nexa XBold";
@@ -72,9 +68,10 @@ h2 {
     margin: 0;
 }
 
-h3{
+h3 {
     font-size: 2em;
 }
+
 h4 {
     font-size: 1.5em;
     margin: .5em 0;
@@ -92,7 +89,6 @@ p {
     font-size: 1em;
     font-family: "Nexa Regular";
 }
-
 
 
 /*NAVIGATION MENU*/
@@ -154,19 +150,17 @@ section:nth-of-type(1) article {
 
 .container {
     display: flex;
-/*    flex-wrap:wrap;*/
     flex-direction: row;
-    justify-content:left;
-    overflow-x:scroll;
-    flex-shrink:0;
-
+    justify-content: left;
+    overflow-x: scroll;
+    flex-shrink: 0;
 }
 
 section:nth-of-type(1) article h3 {
     color: rgb(0, 214, 108);
 }
 
-section>footer a{
+section > footer a {
     color: white;
     background-color: rgb(255, 50, 104);
     box-shadow: 0px 4px rgb(202, 43, 85);
@@ -178,12 +172,12 @@ section>footer a{
     font-family: Nexa Bold;
 }
 
-footer a:hover{
+footer a:hover {
     background-color: rgb(0, 214, 108);
     box-shadow: 0px 4px rgb(30, 145, 98);
     transition: 0.25s;
-
 }
+
 article a {
     background-color: rgb(40, 0, 160);
     box-shadow: 0px 4px rgb(18, 1, 69);
@@ -197,20 +191,20 @@ article a {
     margin: 0.4em;
 }
 
-article footer a:nth-of-type(1){
+article footer a:nth-of-type(1) {
     position: absolute;
     bottom: 1em;
     left: 2em;
 
 }
 
-article footer a:nth-of-type(2){
+article footer a:nth-of-type(2) {
     position: absolute;
     bottom: 1em;
     right: 2em;
 }
 
-article a:hover{
+article a:hover {
     background-color: rgb(255, 50, 104);
     box-shadow: 0px 4px rgb(202, 43, 85);
     transition: 0.25s;
@@ -227,13 +221,13 @@ ul {
     align-items: center
 }
 
-section:nth-of-type(1) ul li{
+section:nth-of-type(1) ul li {
     width: 10%;
     background: url(/images/star.svg) no-repeat;
 
 }
 
-.verhalen{
+.verhalen {
     padding: 1em;
 }
 
@@ -248,7 +242,7 @@ article img {
 
 /*FORM - BUNDEL SAMENSTELLEN*/
 
-section:nth-last-of-type(2){
+section:nth-last-of-type(2) {
     padding: 5em;
 }
 
@@ -262,7 +256,7 @@ section:nth-last-of-type(2) form {
     border-radius: 0.75em;
 }
 
-Form >.items {
+Form > .items {
     color: white;
     width: 9em;
     line-height: 2em;
@@ -273,11 +267,10 @@ legend {
     color: rgb(40, 0, 160);
 }
 
-label{
+label {
     display: block;
 }
 
-/*
 button{
     margin-top: 1em;
     width: 13em;
@@ -292,9 +285,8 @@ button{
     text-decoration: none;
     font-family: Nexa Bold;
 }
-*/
 
-button:hover{
+button:hover {
     background-color: rgb(0, 214, 108);
     box-shadow: 0px 4px rgb(30, 145, 98);
     transition: 0.25s;
@@ -317,7 +309,7 @@ section:nth-of-type(3) {
 
 section:nth-of-type(3) article {
     background-color: white;
-/*    padding: 2em;*/
+    /*    padding: 2em;*/
     margin: 2em 2em 5em 0em;
     width: 20em;
     height: 30em;
@@ -325,9 +317,9 @@ section:nth-of-type(3) article {
     position: relative;
 }
 
-.bundels{
+.bundels {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -345,7 +337,7 @@ footer img {
 
 /*INLOGGEN*/
 
-body#account{
+body#account {
     background-color: rgb(0, 214, 108);
 }
 
@@ -359,7 +351,7 @@ body#account header {
     height: 23em;
 }
 
-body#account form{
+body#account form {
     background-color: white;
     width: 25em;
     height: 30em;
@@ -368,7 +360,7 @@ body#account form{
     border-radius: 0.7em;
 }
 
-body#account input{
+body#account input {
     display: block;
     margin: auto;
     padding: 0.5em;
@@ -376,7 +368,7 @@ body#account input{
     font-size: 1em;
 }
 
-body#account label{
+body#account label {
     display: block;
     font-family: Nexa Bold;
     text-align: center;
@@ -384,7 +376,7 @@ body#account label{
 
 }
 
-body#account form>h1{
+body#account form > h1 {
     display: block;
     font-size: 2em;
     color: rgb(40, 0, 160);
@@ -393,19 +385,20 @@ body#account form>h1{
 }
 
 
-body#account p{
+body#account p {
     text-align: center;
 }
-body#account p>a{
+
+body#account p > a {
     color: rgb(255, 50, 104);
 }
 
-body#account a:hover{
+body#account a:hover {
     color: rgb(40, 0, 160);
     transition: 0.25
 }
 
-body#account form>button{
+body#account form > button {
     color: white;
     background-color: rgb(255, 50, 104);
     box-shadow: 0px 4px rgb(202, 43, 85);
