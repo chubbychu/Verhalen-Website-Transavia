@@ -124,7 +124,7 @@ nav ul {
 
 nav li a {
     display: inline-block;
-    font-family: "Nexa XBold";
+    font-family: "Nexa Bold", helvetica;
     color: rgb(0, 214, 108);
     padding: 0em 1em;
     text-decoration: none;
@@ -191,7 +191,7 @@ section:nth-of-type(1) > footer a {
     Font-weight: bold;
     padding: 1em 2em;
     text-decoration: none;
-    font-family: Nexa Bold;
+    font-family: "Nexa Bold", helvetica;
     -moz-transition: background-color 0.25s ease-out;
     -o-transition: background-color 0.25s ease-out;
     transition: background-color 0.25s ease-out;
@@ -225,7 +225,7 @@ article footer a {
     text-decoration: none;
     Font-size: 1em;
     Font-weight: bold;
-    Font-family: Nexa Bold;
+    Font-family: "Nexa Bold", helvetica;
     Border-radius: 0.5em;
     padding: 1em;
     margin: 0.4em;
@@ -325,7 +325,7 @@ section:nth-of-type(2) a{
     Font-weight: bold;
     padding: 1em 2em;
     text-decoration: none;
-    font-family: Nexa Bold;
+    font-family: "Nexa Bold", helvetica;
     -moz-transition: background-color 0.25s ease-out;
     -o-transition: background-color 0.25s ease-out;
     transition: background-color 0.25s ease-out;
@@ -343,7 +343,7 @@ section:nth-of-type(2) a:hover {
 
 fieldset {
     border: 0;
-    font-family: Nexa Bold;
+    font-family: "Nexa Bold", helvetica;
 }
 
 
@@ -449,7 +449,7 @@ body#account form legend {
 
 body#account label {
     display: block;
-    font-family: Nexa Bold;
+    font-family: "Nexa Bold", helvetica;
     text-align: left;
     margin-left: 1.5em;
     padding: 0.5em;
@@ -496,7 +496,7 @@ form a#login  {
     background-color: rgb(255, 50, 104);
     box-shadow: 0px 4px rgb(202, 43, 85);
     margin-top: 1em;
-    font-family: Nexa Bold;
+    font-family: "Nexa Bold", helvetica;
     font-size: 1em;
     font-weight: bold;
     margin-left: 6.5em;
