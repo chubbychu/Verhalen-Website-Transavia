@@ -8,13 +8,13 @@ GENERIC STYLES
 }
 
 @font-face {
-    font-family: "Nexa Bold", helvetica;
-    src: url(./fonts/Nexa_Bold.ttf);
+    font-family: "Nexa Regular", helvetica;
+    src: url("../fonts/NexaRegular.ttf");
 }
 
 @font-face {
-    font-family: "Nexa Regular", helvetica;
-    src: url(./fonts/Nexa_Regular.ttf);
+    font-family: "Nexa Bold", helvetica;
+    src: url("../fonts/NexaBold.ttf");
 }
 
 body {
