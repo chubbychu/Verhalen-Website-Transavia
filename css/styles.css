@@ -9,12 +9,12 @@ GENERIC STYLES
 
 @font-face {
     font-family: "Nexa Regular", helvetica;
-    src: url("../fonts/NexaRegular.ttf");
+    src: url("./fonts/NexaRegular.ttf");
 }
 
 @font-face {
     font-family: "Nexa Bold", helvetica;
-    src: url("../fonts/NexaBold.ttf");
+    src: url("./fonts/NexaBold.ttf");
 }
 
 body {
@@ -34,11 +34,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+    font-family: "Nexa Bold", helvetica;
     font-size: 2.375em;
     color: rgb(0, 214, 108);
 }
 
 h2 {
+    font-family: "Nexa Bold", helvetica;
     font-size: 2.375em;
     color: rgb(40, 0, 160);
     padding-left: 0.5em;
@@ -46,20 +48,24 @@ h2 {
 }
 
 h3 {
+    font-family: "Nexa Bold", helvetica;
     font-size: 2em;
 }
 
 h4 {
+    font-family: "Nexa Bold", helvetica;
     font-size: 1.3em;
     margin: .5em 0;
     color: #505050;
 }
 
 h5 {
+    font-family: "Nexa Bold", helvetica;
     font-size: 1.25em;
 }
 
 h6 {
+    font-family: "Nexa Bold", helvetica;
     font-size: 1em;
 }
 
