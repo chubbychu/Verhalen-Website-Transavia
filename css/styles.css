@@ -1,6 +1,6 @@
 /*
 ============================================
-GENERAL INFO
+GENERIC STYLES
 ============================================*/
 
 *{
@@ -9,12 +9,12 @@ GENERAL INFO
 
 @font-face {
     font-family: "Nexa Bold", helvetica;
-    src: url(../fonts/Nexa_Bold.ttf);
+    src: url(./fonts/Nexa_Bold.ttf);
 }
 
 @font-face {
     font-family: "Nexa Regular", helvetica;
-    src: url(../fonts/Nexa_Regular.ttf);
+    src: url(./fonts/Nexa_Regular.ttf);
 }
 
 body {
@@ -26,11 +26,11 @@ body > footer {
     color: white;
     text-align: center;
     padding: 2em;
-    font-family: "Nexa Bold";
+    font-family: "Nexa Bold", helvetica;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Nexa Bold";
+    font-family: "Nexa Bold", helvetica;
 }
 
 h1 {
@@ -65,7 +65,7 @@ h6 {
 
 p {
     font-size: 1em;
-    font-family: "Nexa Bold";
+    font-family: "Nexa Bold", helvetica;
     color: #505050;
 }
 
@@ -85,6 +85,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 32em;
+    transition: all 1s;
 }
 
 #homepage h1 {
