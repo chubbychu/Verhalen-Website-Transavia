@@ -7,6 +7,16 @@ GENERAL INFO
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Nexa Bold", helvetica;
+    src: url(../fonts/Nexa_Bold.ttf);
+}
+
+@font-face {
+    font-family: "Nexa Regular", helvetica;
+    src: url(../fonts/Nexa_Regular.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -16,17 +26,7 @@ body > footer {
     color: white;
     text-align: center;
     padding: 2em;
-    font-family: Nexa Bold;
-}
-
-@font-face {
-    font-family: "Nexa Bold", helvetica;
-    src: url(../fonts/Nexa_Bold.ttf);
-}
-
-@font-face {
-    font-family: "Nexa Regular", helvetica;
-    src: url(../fonts/Nexa_Regular.ttf);
+    font-family: "Nexa Bold";
 }
 
 h1, h2, h3, h4, h5, h6 {
