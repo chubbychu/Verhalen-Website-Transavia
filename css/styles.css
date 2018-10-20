@@ -217,6 +217,7 @@ section:nth-of-type(1) > div {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 article footer a:hover {
