@@ -442,7 +442,7 @@ body#account header {
 body#account form {
     margin-top: -3.5em;
     margin-bottom: 3em;
-        position: relative;
+    position: relative;
 
 }
 
@@ -577,6 +577,86 @@ body#account p:nth-of-type(2) > a:hover {
         padding-top: 1.5em;
     }
 }
+
+
+/*
+============================================
+>>>> INGELOGD
+============================================*/
+
+body#ingelogd {
+    background-color: white;
+}
+
+body#ingelogd header {
+    width: 100vw;
+    background-color: white;
+    background: url(../images/transaviacabine.jpg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20em;
+}
+
+body#ingelogd h2 {
+    margin-bottom: 1em;
+}
+
+body#ingelogd section {
+    justify-content: left;
+    margin-left: auto:;
+    margin-right: auto;
+
+}
+
+body#ingelogd section div {
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+body#ingelogd article {
+    justify-content: center;
+    background-color: white;
+    margin-top: 0;
+    margin-right: 1em;
+    margin-left: 1em;
+    width: 100%;
+    height: 30em;
+    border-radius: .75em;
+}
+
+body#ingelogd article > img {
+    width: 100%;
+}
+
+body#ingelogd article footer a {
+    height: 3em;
+}
+
+@media screen and (min-width: 30em) {
+    body#ingelogd article {
+        width: 20em;
+        justify-content: center;
+    }
+    body#ingelogd section div {
+        flex-wrap: wrap;
+        justify-content: left;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+@media screen and (min-width: 60em) {
+    body#ingelogd section div {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 
 
 
