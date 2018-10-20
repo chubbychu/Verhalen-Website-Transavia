@@ -2,12 +2,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Overzichtspagina</title>
+    <meta name="author" content="Violet Jim">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <title>Account</title>
 </head>
 
-<body id="account">
+<body id="account" action="account_ingelogd.html">
     <header>
         <nav>
             <ul>
@@ -19,19 +20,24 @@
     </header>
 
     <form action="inloggen" method="post">
-        <h1>Inloggen</h1>
-        <label>
-            Name:
-            <input type="text" id="name" name="user_name" />
-        </label>
+        <fieldset>
+            <legend>Inloggen</legend>
 
-        <label>
-            E-mail:
-            <input type="email" id="mail" name="user_mail" />
-        </label>
+            <label for="name">Voornaam</label>
+            <input id="name" required>
 
-        <button type="submit">Inloggen</button>
-        <p>Nog geen Transavia account?<a href="">Klik hier!</a></p>
+            <label for="surname">Achternaam</label>
+            <input id="surname" required>
+
+            <label for="mail">E-mail</label>
+            <input id="mail" required>
+
+            <p class="feedback">Het formulier is goed ingevuld!</p>
+
+            <a href="./account_ingelogd.html" id="login" type="submit">Inloggen</a>
+
+            <p>Nog geen Transavia account?<a href="">Klik hier!</a></p>
+        </fieldset>
     </form>
 
 </body>

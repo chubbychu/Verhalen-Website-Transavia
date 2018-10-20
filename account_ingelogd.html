@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Violet Jim">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Account</title>
+</head>
+
+<body id="account" action="account_ingelogd.html">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><img src="./images/transavia_logo_rond.svg" alt="Transavia">Transavia</a></li>
+                <li><a href="./verhalen.html"><img src="./images/verhalen.svg" alt="verhalen">Verhalen</a></li>
+                <li><a href="./account.html"><img src="./images/account.svg" alt="verhalen">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="inloggen" method="post">
+        <fieldset>
+            <legend>Inloggen</legend>
+
+            <label for="name">Voornaam</label>
+            <input id="name" required>
+
+            <label for="surname">Achternaam</label>
+            <input id="surname" required>
+
+            <label for="mail">E-mail</label>
+            <input id="mail" required>
+
+            <p class="feedback">Het formulier is goed ingevuld!</p>
+
+            <button id="login" type="submit">Inloggen</button>
+
+            <p>Nog geen Transavia account?<a href="">Klik hier!</a></p>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
