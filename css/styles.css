@@ -114,6 +114,7 @@ NAVIGATION MENU
 ============================================*/
 
 nav ul {
+    font-family: "Nexa Bold", helvetica;
     position: fixed;
     list-style-type: none;
     margin: 0;
