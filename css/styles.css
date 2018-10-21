@@ -91,7 +91,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 32em;
-    transition: all 1s;
+    transition: all 0.25s;
 }
 
 #homepage h1 {
@@ -205,8 +205,8 @@ section:nth-of-type(1) > footer a {
 }
 
 section:nth-of-type(1) > footer a:hover {
-    background-color: rgb(0, 214, 108);
-    box-shadow: 0px 4px rgb(30, 145, 98);
+    background-color: rgb(202, 43, 85);
+    box-shadow: 0px 4px rgb(255, 50, 104);
     transition: 0.25s;
     -moz-transition: background-color 0.2s ease-out;
     -o-transition: background-color 0.2s ease-out;
@@ -278,6 +278,7 @@ article img {
 
 
 
+
 /*
 ============================================
 FORM - BUNDEL SAMENSTELLEN
@@ -339,8 +340,8 @@ section:nth-of-type(2) a{
 }
 
 section:nth-of-type(2) a:hover {
-    background-color: rgb(0, 214, 108);
-    box-shadow: 0px 4px rgb(30, 145, 98);
+    background-color: rgb(202, 43, 85);
+    box-shadow: 0px 4px rgb(255, 50, 104);
     transition: 0.25s;
     -moz-transition: background-color 0.2s ease-out;
     -o-transition: background-color 0.2s ease-out;
@@ -424,6 +425,10 @@ section .verhalen footer {
 INLOGGEN - ACCOUNT
 ============================================*/
 
+body#account{
+    margin: 0;
+    padding: 0;
+}
 
 body#account {
     background-color: white;
@@ -442,8 +447,8 @@ body#account header {
 body#account form {
     margin-top: -3.5em;
     margin-bottom: 3em;
+/*    height: ;*/
     position: relative;
-
 }
 
 body#account form legend {
@@ -459,31 +464,40 @@ body#account label {
     font-family: "Nexa Bold", helvetica;
     text-align: left;
     margin-left: 1.5em;
+    margin-top: 0.5em;
     padding: 0.5em;
     color: #505050;
 
 }
 
-body#account input {
+body#account input{
     display: block;
     margin: auto;
     padding: 0.5em;
     width: 20em;
     font-size: 1em;
-    color: #505050;
+    font-family: "Nexa Regular", helvetica;
     border-width: 2px;
     border-style: solid;
     border-radius: .5em;
-/*    border-color: lightgray;*/
+    border: 2px solid #b5b5b5;
 }
 
-input:valid {
-    border-color: rgb(0, 214, 108);
-    border-style: solid;
-    border-width: 2px;
+body#account input:valid {
+    border: 2px solid #4de298;
 }
 
-fieldset:valid p:nth-of-type(1) {
+::placeholder {
+    color: lightgrey;
+}
+
+input:focus,
+select:focus {
+    background-color: #eeeeee;
+    border: #505050;
+}
+
+body#account fieldset:valid p:nth-of-type(1) {
     display: block;
     color: White;
     background: rgb(42, 120, 204);
@@ -491,23 +505,25 @@ fieldset:valid p:nth-of-type(1) {
     padding: 1em 0;
     border-radius: 0.5em;
     text-align: center;
-    margin-left: 3em;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
 
-fieldset:invalid p:nth-of-type(1) {
+body#account fieldset:invalid p:nth-of-type(1) {
     display: none;
 }
 
-form a#login  {
+body#account form a#login  {
     color: white;
     background-color: rgb(255, 50, 104);
     box-shadow: 0px 4px rgb(202, 43, 85);
-    margin-top: 1em;
     font-family: "Nexa Bold", helvetica;
     font-size: 1em;
     font-weight: bold;
-    margin-left: 6.5em;
-    margin-top: 2em;
+    margin-top: 1.5em;
+    margin-left: 26%;
+    align-items: center;
     width: 10em;
     border-radius: 2em;
     border: none;
@@ -520,9 +536,9 @@ form a#login  {
     transition: background-color 0.25s ease-out;
 }
 
-form a#login:hover {
-    background-color: rgb(40, 0, 160);
-    box-shadow: 0px 4px rgb(18, 1, 69);
+body#account form a#login:hover {
+    background-color: rgb(202, 43, 85);
+    box-shadow: 0px 4px rgb(255, 50, 104);
     transition: 0.25s;
     -moz-transition: background-color 0.2s ease-out;
     -o-transition: background-color 0.2s ease-out;
@@ -531,10 +547,8 @@ form a#login:hover {
 
 
 body#account p:nth-of-type(2) {
-    margin-top: 7em;
+    margin-top: 6em;
     text-align: center;
-
-
 }
 
 body#account p:nth-of-type(2) > a {
@@ -545,6 +559,12 @@ body#account p:nth-of-type(2) > a:hover {
     color: rgb(40, 0, 160);
     transition: 0.3;
 }
+
+body#account footer {
+    bottom: 0;
+    width: 100%;
+}
+
 
 
 @media screen and (min-width: 30em) {
@@ -563,7 +583,7 @@ body#account p:nth-of-type(2) > a:hover {
     body#account form {
         background-color: white;
         width: 25em;
-        height: 32em;
+        height: 34em;
         margin: auto;
         margin-top: 4em;
         border-radius: 0.7em;
@@ -576,11 +596,21 @@ body#account p:nth-of-type(2) > a:hover {
         text-align: center;
         padding-top: 1.5em;
     }
+/*
+    body#account input{
+        width: 10em;
+    }
+*/
+    body#account footer {
+        bottom: 0;
+        position: relative;
+        width: 100%;
+    }
 }
 
 
-/*
-============================================
+
+/*============================================
 >>>> INGELOGD
 ============================================*/
 
@@ -598,29 +628,85 @@ body#ingelogd header {
     height: 20em;
 }
 
-body#ingelogd h2 {
-    margin-bottom: 1em;
+body#ingelogd div#sorteren{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+
 }
 
-body#ingelogd section {
-    justify-content: left;
-    margin-left: auto:;
-    margin-right: auto;
+#sorteren button:nth-of-type(1){
+    font-family: "Nexa Bold", helvetica;
+    font-size: 1em;
+    background-color: rgb(255, 50, 104);
+    border-bottom-left-radius: 5em;
+    border-top-left-radius: 5em;
+    margin-right: 0;
+    padding:1em;
+    color: white;
+    border-style: none;
+}
 
+#sorteren button:nth-of-type(1):hover{
+    background-color: rgb(40, 0, 160);
+    transition: 0.25s ease-out;
+}
+
+
+
+#sorteren button:nth-of-type(2){
+    font-family: "Nexa Bold", helvetica;
+    font-size: 1em;
+    background-color: #d1bfaf;
+    border-bottom-right-radius: 5em;
+    border-top-right-radius: 5em;
+    margin-left: 0;
+    padding:1em;
+    color: white;
+    border-style: none;
+
+}
+
+@media screen and (min-width: 30em) {
+    div#sorteren {
+        float:right;
+    }
+}
+
+@media screen and (min-width: 60em){
+    div#sorteren {
+        float:right;
+
+    }
+}
+
+#sorteren button:nth-of-type(2):hover{
+    background-color: rgb(40, 0, 160);
+    transition: 0.25s ease-out;
+}
+
+
+body#ingelogd h2 {
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.15em solid;
+    padding-bottom: 0.4em;
 }
 
 body#ingelogd section div {
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
 }
 
 body#ingelogd article {
     justify-content: center;
     background-color: white;
-    margin-top: 0;
-    margin-right: 1em;
     margin-left: 1em;
-    width: 100%;
+    margin-right:1em;
+    margin-top: 0;
+    width:20em;
     height: 30em;
     border-radius: .75em;
 }
@@ -633,30 +719,42 @@ body#ingelogd article footer a {
     height: 3em;
 }
 
+body#ingelogd #hartje{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+/*
+
 @media screen and (min-width: 30em) {
     body#ingelogd article {
         width: 20em;
         justify-content: center;
+        margin-right: 1em;
+        margin-left: 1em;
     }
     body#ingelogd section div {
         flex-wrap: wrap;
-        justify-content: left;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
     }
 
 
 @media screen and (min-width: 60em) {
+    body#ingelogd article{
+        width: 20em;
+        justify-content: center;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
     body#ingelogd section div {
         flex-wrap: wrap;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
     }
 
 }
 
+*/
 
 
 
@@ -671,9 +769,9 @@ body#verhaal {
 }
 
 body#verhaal header {
+    background-image: none;
     width: 100vw;
     height: 4.95em;
-    background-image: none;
 }
 
 /*mobiel*/
@@ -705,7 +803,6 @@ MEDIA QUERY : verhalen pagina
 @media screen and (min-width: 30em){
     body#verhaal main img:nth-of-type(1) {
         display: none;
-
     }
     body#verhaal main img:nth-of-type(2) {
         display: block;
@@ -718,6 +815,9 @@ MEDIA QUERY : verhalen pagina
 }
 
 @media screen and (min-width: 60em){
+    body#verhaal main img:nth-of-type(1) {
+        display: none;
+    }
     body#verhaal main img:nth-of-type(2) {
         display: none;
     }
