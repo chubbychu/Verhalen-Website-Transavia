@@ -1,12 +1,29 @@
 /*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
 
-var section = document.querySelector('form.sortfilter'); 
-var button = document.getElementById("sortfilterbutton");
-var closeButton = document.getElementById("closebutton");
+var downloadButtons = document.querySelectorAll("article footer button:first-of-type");
 
-var reveal = function () {
-	section.classList.toggle('sortfilteractive');
-};
+if (downloadButtons) {
+    for (var i = 0; i < downloadButtons.length; i++) {
+        downloadButtons[i].addEventListener("click", addDownload);
+    }
+}
 
-button.addEventListener('click', reveal);
-closeButton.addEventListener('click', reveal);
+function addDownload(event) {
+    console.log("downloadButtons");
+    var downloadButtons = event.target; // met event target, target ik de daadwerkelijke aangeklikte button.
+    downloadButtons.classList.toggle("color");
+    var notificatie = document.querySelector('header nav ul li span');
+    notificatie.classList.toggle("shownote");
+}
+
+
+//bundel tonen
+var bundelButton = document.querySelector("section:nth-of-type(2) button");
+if (bundelButton) {
+        bundelButton.addEventListener("click", myBundle);
+}
+
+function myBundle() {
+    var downloadButtons = document.querySelector('section:nth-of-type(3)');
+    downloadButtons.classList.toggle("show");
+}

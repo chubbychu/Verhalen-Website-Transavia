@@ -1,6 +1,8 @@
 /*
 ============================================
+
 GENERIC STYLES
+
 ============================================*/
 
 *{
@@ -80,7 +82,9 @@ p {
 
 /*
 ============================================
+
 HEADER
+
 ============================================*/
 
 header {
@@ -110,7 +114,9 @@ header {
 
 /*
 ============================================
+
 NAVIGATION MENU
+
 ============================================*/
 
 nav ul {
@@ -160,7 +166,9 @@ header h1 {
 
 /*
 ============================================
+
 POPULAIRE VERHALEN
+
 ============================================*/
 
 
@@ -250,7 +258,7 @@ article footer a:hover {
     transition: background-color 0.25s ease-out;
 }
 
-ul {
+section:nth-of-type(1) ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -259,6 +267,118 @@ ul {
     display: flex;
     align-items: center
 }
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+MICROINTERACTIE - DOWNLOAD
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+header nav ul li:nth-child(3){
+    position: relative;
+}
+
+header nav ul li span{
+    transform: scale(0);
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    color: white;
+    z-index: -1;
+}
+
+header nav ul li span.shownote{
+    transform: scale(1);
+    background-color: rgb(255, 50, 104);
+    padding: .4em .7em;
+    border-radius: 1em;
+    position: absolute;
+    left: 4.5em;
+    top: 0.4em;
+    height: auto;
+    color: white;
+    transition: 0.5s;
+}
+
+nav li a:nth-last-child(2) {
+        margin-top: 0.9em;
+}
+
+@media screen and (min-width: 30em){
+    header nav ul li span.shownote{
+        left: 8.2em;
+        top: -.6em;
+    }
+    nav li a:nth-last-child(2) {
+        margin-top: 0em;
+    }
+}
+
+@media screen and (min-width: 60em){
+    header nav ul li span.shownote{
+        left: 10em;
+        top: -.6em;
+    }
+}
+
+article footer button:first-of-type{
+    border-style: none;
+    background-color: rgb(40, 0, 160);
+    box-shadow: 0px 4px rgb(18, 1, 69);
+    color: white;
+    text-decoration: none;
+    Font-size: 1em;
+    Font-weight: bold;
+    Font-family: "Nexa Bold", helvetica;
+    Border-radius: 0.5em;
+    padding: 1em;
+    margin: 0.4em;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+}
+
+article footer button:first-of-type:hover{
+    background-color: rgb(255, 50, 104);
+    box-shadow: 0px 4px rgb(202, 43, 85);
+}
+
+article footer button:first-of-type.color{
+    background-color: rgb(0, 214, 108);
+    box-shadow: 0px 4px rgb(0, 214, 108);
+    color: white;
+    text-decoration: none;
+    Font-size: 1em;
+    Font-weight: bold;
+    Font-family: "Nexa Bold", helvetica;
+    Border-radius: 0.5em;
+    padding: 1em;
+    margin: 0.4em;
+    transition: 0.2s all;
+}
+
+article footer button:nth-of-type(2){
+    border-style: none;
+    background-color: rgb(40, 0, 160);
+    box-shadow: 0px 4px rgb(18, 1, 69);
+    color: white;
+    text-decoration: none;
+    Font-size: 1em;
+    Font-weight: bold;
+    Font-family: "Nexa Bold", helvetica;
+    Border-radius: 0.5em;
+    padding: 1em;
+    margin: 0.4em;
+    transition: 0.2s all;
+}
+
+article footer button:nth-of-type(2):hover{
+    background-color: rgb(255, 50, 104);
+    box-shadow: 0px 4px rgb(202, 43, 85);
+}
+
 
 section:nth-of-type(1) ul li {
     width: 10%;
@@ -281,7 +401,9 @@ article img {
 
 /*
 ============================================
+
 FORM - BUNDEL SAMENSTELLEN
+
 ============================================*/
 
 
@@ -321,7 +443,7 @@ label {
     display: block;
 }
 
-section:nth-of-type(2) a{
+section:nth-of-type(2) button{
     margin-top: 2em;
     display: grid;
     width: 13em;
@@ -340,7 +462,7 @@ section:nth-of-type(2) a{
     transition: background-color 0.25s ease-out;
 }
 
-section:nth-of-type(2) a:hover {
+section:nth-of-type(2) button:hover {
     background-color: rgb(202, 43, 85);
     box-shadow: 0px 4px rgb(255, 50, 104);
     transition: 0.25s;
@@ -349,7 +471,6 @@ section:nth-of-type(2) a:hover {
     transition: background-color 0.2s ease-out;
 }
 
-
 fieldset {
     border: 0;
     font-family: "Nexa Bold", helvetica;
@@ -357,24 +478,134 @@ fieldset {
 
 
 /*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+MICROINTERACTIE - GEPERSONALISEERDE BUNDEL
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+section:nth-of-type(3){
+    height: 0em;
+    overflow: hidden;
+    padding-left:2em;
+    padding-right:2em;
+}
+
+section:nth-of-type(3).show{
+    height: 37em;
+    overflow: hidden;
+    padding-left:2em;
+    padding-right:2em;
+    animation: ease-in;
+    transition: 1s;
+}
+
+
+section:nth-of-type(3) h3{
+    margin-bottom: -0.2em;
+}
+
+section:nth-of-type(3) img{
+    border-radius: .75em;
+    width: 100%;
+}
+
+section:nth-of-type(3) ul li{
+    display: flex;
+    font-family: "Nexa Bold";
+    font-size: 1.2em;
+    color: #505050;
+    line-height: 2em;
+    margin-left: -2em;
+}
+
+section:nth-of-type(3) footer{
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (min-width: 30em) {
+    section:nth-of-type(3).show{
+    height: 21em;
+    }
+    section:nth-of-type(3) div{
+        margin-left: 2em;
+    }
+    section:nth-of-type(3) article{
+        display: flex;
+        flex-direction:row;
+    }
+    section:nth-of-type(3) h3{
+        max-width: 34em;
+        margin-top:0;
+    }
+    section:nth-of-type(3) img{
+        max-width: 34em;
+        max-height: 17em;
+    }
+    section:nth-of-type(3) ul li{
+        line-height: 1.65em;
+    }
+    section:nth-of-type(3) footer{
+        float:left;
+    }
+}
+
+
+@media screen and (min-width: 60em) {
+    section:nth-of-type(3){
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    section:nth-of-type(3) div{
+        margin-left: 4em;
+    }
+    section:nth-of-type(3) article{
+        display: flex;
+        flex-direction:row;
+    }
+    section:nth-of-type(3) h3{
+        max-width: 34em;
+        margin-top:0;
+    }
+    section:nth-of-type(3) img{
+        max-width: 34em;
+        max-height: 17em;
+    }
+    section:nth-of-type(3) ul li{
+        line-height: 2em;
+    }
+    section:nth-of-type(3) footer{
+        float:left;
+    }
+}
+
+
+/*
 ============================================
+
 VOORGESTELDE BUNDELS
+
 ============================================*/
 
-section:nth-of-type(3) {
+section:nth-of-type(4) {
     background-color: rgb(243, 229, 216);
     padding: 1em;
     padding-bottom: 7em;
     padding-top: 2em;
 }
 
-section:nth-of-type(3) .bundels{
+section:nth-of-type(4) .bundels{
     display: flex;
     justify-content: center;
     flex-direction:column;
 }
 
-section:nth-of-type(3) article {
+section:nth-of-type(4) article {
     background-color: white;
     margin-left: 1em;
     margin-right: 1em;
@@ -382,7 +613,7 @@ section:nth-of-type(3) article {
     border-radius: .75em;
 }
 
-section:nth-of-type(3) article img{
+section:nth-of-type(4) article img{
     width: 100%;
 }
 
@@ -424,8 +655,11 @@ section .verhalen footer {
 
 /*
 ============================================
+
 INLOGGEN - ACCOUNT
+
 ============================================*/
+
 
 body#account{
     margin: 0;
@@ -449,7 +683,6 @@ body#account header {
 body#account form {
     margin-top: -3.5em;
     margin-bottom: 3em;
-/*    height: ;*/
     position: relative;
 }
 
@@ -469,7 +702,6 @@ body#account label {
     margin-top: 0.5em;
     padding: 0.5em;
     color: #505050;
-
 }
 
 body#account input{
@@ -512,7 +744,6 @@ body#account input[type=email]:valid:focus{
 body#account input[type=email]:invalid:focus{
     background-color: lightcoral;
 }
-
 
 ::placeholder {
     color: lightgrey;
@@ -570,7 +801,6 @@ body#account form a#login:hover {
     transition: background-color 0.2s ease-out;
 }
 
-
 body#account p:nth-of-type(2) {
     margin-top: 2em;
     text-align: center;
@@ -621,11 +851,7 @@ body#account footer {
         text-align: center;
         padding-top: 1.5em;
     }
-/*
-    body#account input{
-        width: 10em;
-    }
-*/
+
     body#account footer {
         bottom: 0;
         position: relative;
@@ -636,8 +862,11 @@ body#account footer {
 
 
 /*============================================
+
 >>>> INGELOGD
+
 ============================================*/
+
 
 body#ingelogd {
     background-color: white;
@@ -678,8 +907,6 @@ body#ingelogd div#sorteren{
     transition: 0.25s ease-out;
 }
 
-
-
 #sorteren button:nth-of-type(2){
     font-family: "Nexa Bold", helvetica;
     font-size: 1em;
@@ -690,27 +917,12 @@ body#ingelogd div#sorteren{
     padding:1em;
     color: white;
     border-style: none;
-
-}
-
-@media screen and (min-width: 30em) {
-    div#sorteren {
-        float:right;
-    }
-}
-
-@media screen and (min-width: 60em){
-    div#sorteren {
-        float:right;
-
-    }
 }
 
 #sorteren button:nth-of-type(2):hover{
     background-color: rgb(40, 0, 160);
     transition: 0.25s ease-out;
 }
-
 
 body#ingelogd h2 {
     margin-bottom: 1em;
@@ -749,43 +961,24 @@ body#ingelogd #hartje{
     border-top-right-radius: 0;
 }
 
-
-/*
-
 @media screen and (min-width: 30em) {
-    body#ingelogd article {
-        width: 20em;
-        justify-content: center;
-        margin-right: 1em;
-        margin-left: 1em;
+    div#sorteren {
+        float:right;
     }
-    body#ingelogd section div {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-
-@media screen and (min-width: 60em) {
-    body#ingelogd article{
-        width: 20em;
-        justify-content: center;
-        margin-right: 1em;
-        margin-left: 1em;
-    }
-    body#ingelogd section div {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
 }
 
-*/
+@media screen and (min-width: 60em){
+    div#sorteren {
+        float:right;
 
-
+    }
+}
 
 /*
 ============================================
+
 RESPONSIVE : VERHALEN PAGINA
+
 ============================================*/
 
 
@@ -851,10 +1044,11 @@ MEDIA QUERY : verhalen pagina
 }
 
 
-
 /*
 ============================================
+
 MEDIA QUERY : ALGEMEEN
+
 ============================================*/
 
 
@@ -879,20 +1073,20 @@ MEDIA QUERY : ALGEMEEN
         padding: 2em;
         padding-bottom: 2em;
     }
-    section:nth-of-type(3) {
+    section:nth-of-type(4) {
         padding: 1em;
+        padding-top: 2em;
         padding-bottom: 7em;
     }
-    section:nth-of-type(3) .bundels {
+    section:nth-of-type(4) .bundels {
         flex-direction:row;
         flex-wrap:wrap;
     }
-    section:nth-of-type(3) article {
+    section:nth-of-type(4) article {
         width:50%;
         flex:1 1 20em;
     }
 }
-
 
 
 @media screen and (min-width: 60em) {
@@ -920,21 +1114,23 @@ MEDIA QUERY : ALGEMEEN
         width: 10em;
         font-size: 1.3em;
     }
-    section:nth-of-type(3) {
+    section:nth-of-type(4) {
         padding: 5em;
     }
-    section:nth-of-type(3){
+    section:nth-of-type(4){
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: flex-start;
     }
-    section:nth-of-type(3) .bundels {
+    section:nth-of-type(4) .bundels {
         flex-direction:row;
         flex-wrap:wrap;
     }
-    section:nth-of-type(3) article {
+    section:nth-of-type(4) article {
         width:50%;
         flex:1 1 20em;
     }
 }
+
+
