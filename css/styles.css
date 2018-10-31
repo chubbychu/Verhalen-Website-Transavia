@@ -282,6 +282,7 @@ header nav ul li:nth-child(3){
 
 header nav ul li span{
     transform: scale(0);
+    opacity: 0;
     height: 0;
     overflow: hidden;
     padding: 0;
@@ -291,6 +292,7 @@ header nav ul li span{
 
 header nav ul li span.shownote{
     transform: scale(1);
+    opacity: 100;
     background-color: rgb(255, 50, 104);
     padding: .4em .7em;
     border-radius: 1em;
